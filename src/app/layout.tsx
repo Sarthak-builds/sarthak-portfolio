@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-hanken-grotesk antialiased`}
+        className={`font-hanken-grotesk antialiased bg-black/98`}
       >
         {children}
       </body>
