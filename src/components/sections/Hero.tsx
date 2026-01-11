@@ -4,13 +4,13 @@ import GuitarString from "../ui/GuitarString"
 export const Hero = () => {
 
     return (
-        <div className=" min-h-90 mt-12 relative flex flex-col  py-4  px-12 ">
+        <div className=" max-h-120 mt-12 relative flex flex-col  pt-4 px-12 ">
             <div className="flex gap-12">
              <div className="min-w-45 min-h-45 absolute top-4 -rotate-5 border-amber-100 border-2 rounded-lg special-gothic"></div>
            <div className="min-h-50 min-w-50"><Image src="/assets/images/sarthak_mee.jpeg" width={180} height={250} alt="Sarthak" className=" shadow-white/50 rounded-3xl "/></div> 
             <div className="flex flex-col w-full gap-4">
             <div className="text-white">
-            <h1 className=" text-4xl instrument-serif-regular-italic">Hi, I'm Sarthak Shiroty</h1>
+            <h1 className=" text-4xl instrument-serif-regular-italic italic">Hi, I'm Sarthak Shiroty</h1>
             <div className="text-white/50 hanken-grotesk text-sm w-full py-1">21 • Engineer  • Tech Brother and Builder</div>
             </div>
             

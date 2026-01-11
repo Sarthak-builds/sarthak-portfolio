@@ -38,7 +38,7 @@ export default function GuitarString() {
     <div
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="absolute top-0 flex h-40 w-full flex-col justify-center cursor-crosshair"
+      className="  flex h-60 w-full flex-col justify-center cursor-crosshair "
     >
       <svg
         className="pointer-events-none absolute left-0 top-0 h-full w-full"

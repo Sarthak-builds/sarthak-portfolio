@@ -30,7 +30,7 @@
 .instrument-serif-regular-italic {
   font-family: "Instrument Serif", serif;
   font-weight: 500;
-  font-style: italic;
+  font-style: ;
 }
 
 
@@ -39,4 +39,15 @@
   font-optical-sizing: auto;
   font-weight:200;
   font-style: normal;
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;       
+    scrollbar-width: none;          
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;    
+  }
 }
