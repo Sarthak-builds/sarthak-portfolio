@@ -13,7 +13,7 @@ const stack2 = [
 
 export const Stack = () => {
  return (
-    <div>
+    <div className='mt-40'>
         <h2 className='instrument-serif-regular-italic text-xl mb-4 '>
          Tools and Technologies
         </h2>
