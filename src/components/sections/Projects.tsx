@@ -1,5 +1,5 @@
 import { ProjectCard } from "../ui/ProjectCard"
-
+import Link from "next/link"
 
 export const Projects = ( ) => {
 
@@ -15,7 +15,12 @@ export const Projects = ( ) => {
              </ol>
             </div>
             <div className="w-full flex justify-end px-4 hanken-grotesk">
-                <button className="py-1 px-3 rounded-lg border text-sm">All Projects</button>
+                <Link 
+            href="/projects" 
+            className="py-1 px-3 rounded-lg border text-sm hover:bg-white/10 hover:border-white/10 transition-colors"
+        >
+            All Projects 
+        </Link>
             </div>
         </div>
     )
