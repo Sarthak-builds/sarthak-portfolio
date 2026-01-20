@@ -18,7 +18,6 @@ export const Hero = () => {
     
   </div>
   <div className="absolute top-12 flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100">
-    {/* <div className="text-sm mt-2 hanken-grotesk italic text-white/60">Connect With me</div> */}
     <div className="bg-white/4 text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-10 scale-80">
      <SocialLinksHero></SocialLinksHero>
     </div>

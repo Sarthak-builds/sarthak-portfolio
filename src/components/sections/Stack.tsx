@@ -6,7 +6,7 @@ import { stack1, stack2 } from '@/data/stack';
 export const Stack = () => {
  return (
     <div className='mt-50'>
-        <h2 className='instrument-serif-regular-italic text-2xl mb-4 text-white/90'>
+        <h2 className='instrument-serif-regular-italic text-xl mb-4 text-white/90'>
          Tools and Technologies
         </h2>
         
@@ -20,7 +20,7 @@ export const Stack = () => {
             <Batch key={`${item.name}-${index}`}>
                <div className="flex items-center gap-2 px-1">
                    <item.icon 
-                      className="w-5 h-7" 
+                      className="w-5 h-6" 
                       style={{ color: item.color }} 
                    />
                    <span className='text-gray-200 whitespace-nowrap'>
@@ -40,7 +40,7 @@ export const Stack = () => {
             <Batch key={`${item.name}-${index}`}>
                 <div className="flex items-center gap-2 px-1">
                    <item.icon 
-                      className="w-6 h-7" 
+                      className="w-6 h-6" 
                       style={{ color: item.color }} 
                    />
                    <span className='text-gray-200 whitespace-nowrap'>

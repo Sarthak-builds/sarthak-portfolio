@@ -1,26 +1,35 @@
 import { ProjectCard } from "@/components/ui/ProjectCard"; 
 import Link from "next/link";
-import { FaHome } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+import { allProjects } from "@/data/projects"; 
 
 export default function AllProjectsPage() {
   return (
-    <div className="max-w-5xl min-h-screen mx-auto px-10 text-white py-15 z-10 relative">
-      <div className="mb-10 flex flex-col gap-4">
-        <Link href="/" className="text-xl text-white/50 hover:text-white mb-2 border-2 rounded-lg max-w-fit p-1  ">
-           <FaHome></FaHome>
+    <div className="max-w-5xl min-h-screen mx-auto px-6 md:px-10 text-white py-20 z-10 relative">
+      <div className="mb-16 flex flex-col items-start gap-6">
+        <Link 
+            href="/" 
+            className="group flex items-center gap-2 text-sm text-white/40 hover:text-white transition-colors border border-white/10 hover:border-white/20 rounded-full px-4 py-2 bg-white/5"
+        >
+            <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
+            <span>Back to Home</span>
         </Link>
-        <h1 className="instrument-serif-regular text-4xl text-center ">A complete archive of my development work.</h1>
+        
+        <div className="w-full flex justify-center items-center">
+            <p className="text-white instrument-serif-regular-italic  leading-relaxed text-center text-2xl">
+                A complete collection of my development work, side projects, and open-source contributions.
+            </p>
+        </div>
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 pb-20">
+        {allProjects.map((project, index) => (
+            <ProjectCard 
+                key={index}
+                {...project}
+            />
+        ))}
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-      
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-      </div>
     </div>
   );
 }
