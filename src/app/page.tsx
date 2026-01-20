@@ -4,7 +4,7 @@ import { Experience } from "@/components/sections/Experience"
 import { Hero } from "@/components/sections/Hero"
 import { Projects } from "@/components/sections/Projects"
 import { Stack } from "@/components/sections/Stack"
-import SocialLink from "@/components/ui/SocialLink"
+import SocialLink from "@/components/ui/SocialLinksHero"
 import Link from "next/link"
 export default function Home () {
 

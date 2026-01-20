@@ -1,4 +1,4 @@
-import SocialLink from "../ui/SocialLink"
+import SocialLink from "../ui/SocialLinksHero"
 
 export const CTA = () => {
     return (

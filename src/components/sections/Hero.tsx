@@ -1,7 +1,7 @@
 
 import Image from "next/image"
 import GuitarString from "../ui/GuitarString"
-import SocialLink from "../ui/SocialLink"
+import SocialLinksHero from "../ui/SocialLinksHero"
 
 export const Hero = () => {
 
@@ -12,16 +12,15 @@ export const Hero = () => {
            <div className="min-h-50 min-w-50">
             <Image src="/assets/images/sarthak_mee.jpeg" width={180} height={250} alt="Sarthak" className=" shadow-white/50 rounded-3xl "/>
             <div className="relative group flex flex-col items-center justify-center w-fit mx-auto my-2">
-                <div className="text-3xl duration-200 group-hover:rotate-180 cursor-pointer ">
+               <div className="text-sm mt-2 hanken-grotesk italic text-white/60 right-10">Connect With Me</div>
+                <div className="text-3xl duration-200 group-hover:rotate-180 cursor-pointer absolute top-5 ">
     <i className="ri-arrow-down-s-fill z-50"></i>
+    
   </div>
-  <div className="absolute top-5 flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100">
-    {/* Main Box Content */}
-    <div className="text-sm mt-2 hanken-grotesk italic text-white/60">Connect With me</div>
-    <div className="bg-white/4 text-white text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-10 scale-80">
-      <SocialLink></SocialLink>
-      <SocialLink></SocialLink>
-      <SocialLink></SocialLink>
+  <div className="absolute top-12 flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100">
+    {/* <div className="text-sm mt-2 hanken-grotesk italic text-white/60">Connect With me</div> */}
+    <div className="bg-white/4 text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-10 scale-80">
+     <SocialLinksHero></SocialLinksHero>
     </div>
   </div>
             </div>
@@ -35,7 +34,7 @@ export const Hero = () => {
             
             <p className="text-white/60 hanken-grotesk leading-8">
                 I am a <span className="text-white">product-focused engineer</span> who prioritizes shipping functional software. <br></br>
-                I build<span className="text-white"> pixel-perfect web apps</span>  with a focus on refining the user experience. My recent project, <span className="text-white">WebLens,</span> validated this approach by attracting over<span className="text-white"> 3,000 views and processing 50+ websites.</span> Currently engineering an AI lip-syncing platform.
+                I build<span className="text-white"> pixel-perfect web apps</span>  with a focus on refining the user experience. My recent FE project, <span className="text-white">WebLens,</span> validated this approach by attracting over<span className="text-white"> 3,000 views and processing 20+ websites.</span> Currently engineering an AI lip-syncing platform.
                 <br></br>
                 <span className="text-white">When I’m not coding: </span>I’m usually deep down a YouTube video, reading, or geeking out over aviation mechanics.
                 <br></br> 
