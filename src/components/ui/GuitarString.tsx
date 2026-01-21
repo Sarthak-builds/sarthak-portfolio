@@ -20,8 +20,6 @@ export default function GuitarString() {
     const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
     const relativeX = ((clientX - left) / width) * 100;
     const relativeY = ((clientY - top) / height) * 100;
-
-    // Update the values directly
     xPoint.set(relativeX);
     yPoint.set(relativeY);
   };
@@ -50,7 +48,7 @@ export default function GuitarString() {
           stroke="currentColor" 
           strokeWidth="2"
           fill="transparent"
-          className="stroke-gray-400"
+          className="stroke-blue-400"
           vectorEffect="non-scaling-stroke"
         />
       </svg>

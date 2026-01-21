@@ -3,7 +3,7 @@ export interface Project {
   description: string;
   tech: string[];
   liveUrl?: string;
-  githubUrl: string;
+  githubUrl?: string;
   image: string;
   status: "Live" | "Building" | "MVP";
 }
@@ -26,6 +26,14 @@ const allProjectsData: Project[] = [
     githubUrl: "https://github.com/Sarthak-builds/WebLens",
     image: "/assets/images/weblens.png",
     status: "Live",
+  },
+  {
+    title: "Portfolio-Forge",
+    description: "Automated documentation generator for infrastructure as code. Parses Terraform/AWS CDK files to create readable visual graphs.",
+    tech: ["Node.js", "Graphviz", "TypeScript"],
+    githubUrl: "",
+    image: "/assets/images/portfolio-forge.png",
+    status: "Building",
   },
   {
     title: "BrainCloud",
@@ -54,14 +62,7 @@ const allProjectsData: Project[] = [
     image: "/assets/images/swiftmind.png",
     status: "Live",
   },
-  {
-    title: "Portfolio-Forge",
-    description: "Automated documentation generator for infrastructure as code. Parses Terraform/AWS CDK files to create readable visual graphs.",
-    tech: ["Node.js", "Graphviz", "TypeScript"],
-    githubUrl: "https://github.com/Sarthak-builds/InfraDocs",
-    image: "/assets/images/infradocs.png",
-    status: "Building",
-  },
+  
 ];
 export const featuredProjects = [
     allProjectsData[0],

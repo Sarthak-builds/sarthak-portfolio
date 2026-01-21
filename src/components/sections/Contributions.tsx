@@ -6,7 +6,7 @@ export default function Contributions() {
   const username = "Sarthak-builds";
 
   return (
-    <section id="contributions" className="py-16 my-8">
+    <section id="contributions" className="py-4 mt-8">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-xl mb-4 instrument-serif-regular-italic">
           GitHub Contributions
@@ -29,8 +29,8 @@ export default function Contributions() {
           />
         </div>
 
-        <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
-         A fresh start for 2026: Turning these tiles green, one commit at a time.
+        <p className="text-center text-sm text-gray-500 dark:text-gray-400 ">
+         "A fresh start for 2026: Turning these tiles green, one commit at a time."
         </p>
       </div>
     </section>

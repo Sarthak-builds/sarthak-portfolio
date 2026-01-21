@@ -13,7 +13,7 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
      {
     name: 'X',
-    href: 'https://x.com/your_handle', 
+    href: 'https://x.com/Sarthakbuilds', 
     icon: FaXTwitter,
     ariaLabel: 'X / Twitter profile',
     className:'text-gray-400 hover:text-white transition-colors duration-200 hover:scale-110'
@@ -27,21 +27,21 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/sarthak-shiroty',
+    href: 'https://in.linkedin.com/in/sarthak-shiroty-8240bb357',
     icon: FaLinkedin, 
     ariaLabel: 'LinkedIn profile',
     className:'text-blue-300 hover:text-blue-400 transition-colors duration-200 hover:scale-110'
   },
   {
     name: 'Email',
-    href: 'mailto:your.real.email@gmail.com',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=sarthakshiroty20@gmail.com',
     icon: FaEnvelope,
     ariaLabel: 'Email me',
     className:'text-gray-400 hover:text-white transition-colors duration-200 hover:scale-110'
   },
   {
     name: 'Buy Me a Coffee',
-    href: 'https://buymeacoffee.com/your_handle', 
+    href: 'https://buymeacoffee.com/sarthakbuilds', 
     icon: FaCoffee,
     ariaLabel: 'Support my work',
     className:'text-cyan-400 hover:text-cyan-500 transition-colors duration-200 hover:scale-110'
@@ -50,7 +50,7 @@ export const socialLinks: SocialLink[] = [
 export const socialLinksHero: SocialLink[] = [
      {
     name: 'X',
-    href: 'https://x.com/your_handle', 
+    href: 'https://x.com/Sarthakbuilds', 
     icon: FaXTwitter,
     ariaLabel: 'X / Twitter profile',
     className:'text-gray-400 hover:text-white transition-colors duration-200 hover:scale-110'
@@ -64,7 +64,7 @@ export const socialLinksHero: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/sarthak-shiroty',
+    href: 'https://in.linkedin.com/in/sarthak-shiroty-8240bb357',
     icon: FaLinkedin, 
     ariaLabel: 'LinkedIn profile',
      className:'text-blue-300 hover:text-blue-400 transition-colors duration-200 hover:scale-110'
