@@ -9,7 +9,7 @@ export interface ExperienceItem {
   technologies: string; 
 }
 const FreelanceLogo = () => (
-  <div className="w-10 h-10 bg-white/10 border border-white/10 rounded-full flex items-center justify-center text-lg font-serif italic text-white/90 shrink-0">
+  <div className="w-10 h-10  border border-white/10 rounded-full flex items-center justify-center text-lg font-serif italic text-white/90 shrink-0">
     F
   </div>
 );

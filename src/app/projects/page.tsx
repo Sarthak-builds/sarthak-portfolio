@@ -9,15 +9,15 @@ export default function AllProjectsPage() {
       <div className="mb-16 flex flex-col items-start gap-6">
         <Link 
             href="/" 
-            className="group flex items-center gap-2 text-sm text-white/40 hover:text-white transition-colors border border-white/10 hover:border-white/20 rounded-full px-4 py-2 bg-white/5"
+            className="group flex items-center gap-2 text-sm text-white/40 hover:text-white transition-colors border border-white/10 hover:border-white/20 rounded-full px-4 py-2 "
         >
             <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
             <span>Back to Home</span>
         </Link>
         
         <div className="w-full flex justify-center items-center">
-            <p className="text-white instrument-serif-regular-italic  leading-relaxed text-center text-2xl">
-                A complete collection of my development work, side projects, and open-source contributions.
+            <p className="text-white instrument-serif-regular-italic  leading-relaxed text-center text-3xl">
+                A complete collection of my development work.
             </p>
         </div>
       </div>

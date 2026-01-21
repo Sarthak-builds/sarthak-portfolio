@@ -12,7 +12,7 @@ export default function Contributions() {
           GitHub Contributions
         </h2>
 
-        <div className=" rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar px-10 border-2 border-white/60 hanken-grotesk">
+        <div className=" rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar px-10  hanken-grotesk scale-108">
           <GitHubCalendar
             username={username}
 

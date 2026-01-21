@@ -55,7 +55,7 @@ const allProjectsData: Project[] = [
     status: "Live",
   },
   {
-    title: "InfraDocs",
+    title: "Portfolio-Forge",
     description: "Automated documentation generator for infrastructure as code. Parses Terraform/AWS CDK files to create readable visual graphs.",
     tech: ["Node.js", "Graphviz", "TypeScript"],
     githubUrl: "https://github.com/Sarthak-builds/InfraDocs",

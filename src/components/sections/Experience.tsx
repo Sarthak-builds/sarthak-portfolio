@@ -4,7 +4,7 @@ import { experienceData } from "@/data/experience";
 export const Experience = () => {
     return (
         <div className="my-10">
-            <h2 className="instrument-serif-regular-italic text-2xl  text-white/90">
+            <h2 className="instrument-serif-regular-italic text-2xl  tracking-tight  text-white/90">
                 Experience
             </h2>
             
