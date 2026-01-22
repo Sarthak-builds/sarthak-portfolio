@@ -7,10 +7,10 @@ export const Experience = () => {
             <h2 className="instrument-serif-regular-italic text-2xl  tracking-tight  text-white/90">
                 Experience
             </h2>
-            
-            <div className="flex flex-col scale-95">
+
+            <div className="flex flex-col scale-100 md:scale-95">
                 {experienceData.map((item) => (
-                    <Exptag 
+                    <Exptag
                         key={item.id}
                         logo={item.logo}
                         company={item.company}

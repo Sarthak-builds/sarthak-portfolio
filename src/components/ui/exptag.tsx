@@ -2,7 +2,7 @@
 import React, { ReactNode } from "react";
 
 export interface ExperienceCardProps {
-    logo: ReactNode; 
+    logo: ReactNode;
     company: string;
     role: string;
     date: string;
@@ -12,13 +12,13 @@ export interface ExperienceCardProps {
 
 export const Exptag = ({ logo, company, role, date, description, technologies }: ExperienceCardProps) => {
     return (
-        <div className="w-full rounded-xl my-4 px-6 md:px-10 hanken-grotesk py-6 inset-shadow-white/10 inset-shadow-sm ">
+        <div className="w-full rounded-xl my-4 px-4 md:px-10 hanken-grotesk py-6 inset-shadow-white/10 inset-shadow-sm ">
             <div className="flex flex-col md:flex-row justify-between gap-4 md:items-start">
                 <div className="flex justify-start items-center gap-4">
                     <div>
                         {logo}
                     </div>
-                    
+
                     <div>
                         <h2 className="text-xl capitalize font-medium text-white/90">
                             {company}

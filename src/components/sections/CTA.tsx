@@ -1,8 +1,8 @@
 import SocialLinks from "../ui/SocialLinks"
 export const CTA = () => {
     return (
-        <div className="relative w-full flex flex-col justify-center items-center mt-22 gap-4 py-8 rounded-xl overflow-hidden">
-            <div 
+        <div className="relative w-full flex flex-col justify-center items-center mt-10 md:mt-22 gap-4 py-8 rounded-xl overflow-hidden">
+            <div
                 className="absolute inset-0 bg-[url('/assets/images/cta.jpg')] bg-cover bg-center brightness-[0.3] grayscale-30"
             />
             <div className="relative z-10 flex flex-col items-center gap-2">

@@ -11,9 +11,10 @@
 .roboto-slab {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -36,12 +37,11 @@
 .instrument-serif-regular-italic {
   font-family: "Instrument Serif", serif;
   font-weight: 100;
-  font-style: ;
 }
+
 .space-grotesk {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -49,17 +49,26 @@
 .inter-tight {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
-  font-weight:200;
+  font-weight: 200;
   font-style: normal;
 }
 
 @layer utilities {
   .no-scrollbar {
-    -ms-overflow-style: none;       
-    scrollbar-width: none;          
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .no-scrollbar::-webkit-scrollbar {
-    display: none;    
+    display: none;
+  }
+
+  /* Validate this actually works for all */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    scrollbar-width: none;
   }
 }

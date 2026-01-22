@@ -10,7 +10,7 @@ export default function Home () {
 
 
   return (
-    <div className=" max-w-5xl min-h-screen mx-auto px-10 text-white pt-10 pb-15 z-10 relative">
+    <div className=" max-w-5xl min-h-screen mx-auto px-4 md:px-10 text-white pt-10 pb-15 z-10 relative">
       
       <Hero></Hero>
       <Stack></Stack>
