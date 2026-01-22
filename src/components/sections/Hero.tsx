@@ -41,14 +41,14 @@ export const Hero = () => {
             <div className="text-white/50 hanken-grotesk text-sm w-full py-1">21 • Engineer • Web Developer • Tech Brother and Builder</div>
             </div>
             
-            <p className="text-white/60 hanken-grotesk leading-8">
+            <div className="text-white/60 hanken-grotesk leading-8">
                 I am a <span className="text-white">product-focused engineer</span> who build<span className="text-white"> pixel-perfect UI</span>  with a focus on refining the user experience. <br>
                 </br>Self-taught <span className="text-white"> Web developer, driven by designer’s intuition.</span> breaking the internet to learn how it works. Currently building an AI lip-syncing platform.
                 <br></br>
                 <span className="text-white">When I’m not coding: </span>I’m usually deep down a YouTube video, reading, or geeking out over aviation mechanics.
                 <br></br> 
                 <StatusLine></StatusLine>
-            </p>
+            </div>
             </div>
             </div>
             <div className="relative">

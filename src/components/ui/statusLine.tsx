@@ -16,7 +16,6 @@ const StatusLine = () => {
         />
         <div className=" m-1 relative w-1.5 h-1.5 bg-green-400 rounded-full" />
       </div>
-      
       <span className="">
         <span className="font-semibold hanken-grotesk">Open to Work:</span> Full-Time, Freelance, or Collabs.
       </span>
