@@ -4,6 +4,7 @@ import GuitarString from "../ui/GuitarString"
 import SocialLinksHero from "../ui/SocialLinksHero"
 import { FaEnvelope } from "react-icons/fa"
 import SocialLinks from "../ui/SocialLinks"
+import StatusLine from "../ui/statusLine"
 
 export const Hero = () => {
 
@@ -22,7 +23,7 @@ export const Hero = () => {
     
   </div>
   <div className="absolute top-12 flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100">
-    <div className="bg-white/1 text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-3 scale-80 flex-col">
+    <div className="bg-white/5 text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-3 scale-80 flex-col">
      {/* <SocialLinksHero></SocialLinksHero> */}
      <SocialLinks></SocialLinks>
      <div className="mt-2 flex flex-col justify-center hanken-grotesk text-lg">
@@ -41,13 +42,12 @@ export const Hero = () => {
             </div>
             
             <p className="text-white/60 hanken-grotesk leading-8">
-                I am a <span className="text-white">product-focused engineer</span> who prioritizes shipping functional software. <br></br>
-                I build<span className="text-white"> pixel-perfect web apps</span>  with a focus on refining the user experience. My recent FE project, <span className="text-white">WebLens,</span> validated this approach by attracting over<span className="text-white"> 3,000 views and processing 20+ websites.</span> Currently engineering an AI lip-syncing platform.
+                I am a <span className="text-white">product-focused engineer</span> who build<span className="text-white"> pixel-perfect UI</span>  with a focus on refining the user experience. <br>
+                </br>Self-taught <span className="text-white"> Web developer, driven by designer’s intuition.</span> breaking the internet to learn how it works. Currently building an AI lip-syncing platform.
                 <br></br>
                 <span className="text-white">When I’m not coding: </span>I’m usually deep down a YouTube video, reading, or geeking out over aviation mechanics.
                 <br></br> 
-                <span className="text-white"><span className="text-green-400 px-1 text-lg">•</span>Open to Work:</span> Full-Time, Freelance, or Collabs.
-               
+                <StatusLine></StatusLine>
             </p>
             </div>
             </div>
