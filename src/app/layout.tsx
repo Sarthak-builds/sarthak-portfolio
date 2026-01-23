@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     template: "%s | Sarthak Shiroty"
   },
   description: "Product-focused engineer building pixel-perfect UI and high-performance web applications. Specializing in React, Next.js, and modern frontend architecture.",
-  keywords: ["Sarthak Shiroty", "Frontend Developer", "Web Developer", "React", "Next.js", "Portfolio", "Indore", "Software Engineer"],
+  keywords: ["Sarthak Shiroty", "Frontend Developer", "Web Developer", "React", "Next.js", "Portfolio", "Indore","India", "Software Engineer"],
   authors: [{ name: "Sarthak Shiroty" }],
   creator: "Sarthak Shiroty",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_US || en_IN",
     url: "https://sarthakbuilds.vercel.app",
     title: "Sarthak Shiroty | Portfolio",
     description: "Product-focused engineer building pixel-perfect UI and high-performance web applications.",
