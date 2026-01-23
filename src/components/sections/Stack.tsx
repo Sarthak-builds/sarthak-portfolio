@@ -5,14 +5,14 @@ import { stack1, stack2 } from '@/data/stack';
 
 export const Stack = () => {
   return (
-    <div className='mt-36 md:mt-38'>
+    <div className='mt-38 md:mt-38'>
       <h2 className='instrument-serif-regular-italic text-xl mb-4 text-neutral-900 dark:text-white/90'>
         Tools and Technologies
       </h2>
 
-      <div className='flex flex-col gap-4 w-full overflow-hidden hanken-grotesk'>
+      <div className='flex flex-col gap-4 w-full overflow-hidden hanken-grotesk scale-90 md:scale-100'>
         <motion.div
-          className='flex flex-nowrap gap-4 hanken-grotesk'
+          className='flex flex-nowrap gap-2 md:gap-4 hanken-grotesk'
           animate={{ x: "-50%" }}
           transition={{ ease: "linear", duration: 60, repeat: Infinity }}
         >

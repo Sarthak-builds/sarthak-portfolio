@@ -18,11 +18,11 @@ export default function Home() {
       <Experience></Experience>
       <Projects></Projects>
       <CTA></CTA>
-      <div className="text-neutral-500 dark:text-white/30 text-center mt-16">
+      <div className="text-neutral-500 dark:text-white/30 text-center mt-16 pb-8 md:pb-0">
         Design & Developed by <Link href="https://x.com/Sarthakbuilds"
           target="_blank"
           rel="noopener noreferrer" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-green-400"> Sarthakbuilds </Link>
-        © 2026. All rights reserved.
+        <span className="block md:inline">© 2026. All rights reserved.</span>
       </div>
     </div>
   )

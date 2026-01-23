@@ -4,9 +4,9 @@ import { featuredProjects } from "@/data/projects";
 
 export const Projects = () => {
     return (
-        <div className="w-full">
+        <div className="w-full md:mt-12 mt-1">
             <div className="flex items-center gap-3 mb-8 justify-start">
-                <h1 className="instrument-serif-regular-italic text-2xl text-neutral-900 dark:text-white/90">
+                <h1 className="instrument-serif-regular-italic text-2xl text-white">
                     Proof of Work
                 </h1>
                 {/* <span className="text-white/40 hanken-grotesk text-lg">

@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Project } from "@/data/projects";
 
 export const ProjectCard = ({
@@ -13,6 +15,7 @@ export const ProjectCard = ({
   image,
   status
 }: Project) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const isBuilding = status === "Building";
   const badgeColor = isBuilding
@@ -43,13 +46,13 @@ export const ProjectCard = ({
             <div className="flex gap-3">
               {liveUrl && (
                 <Link href={liveUrl} target="_blank" className="text-neutral-500 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors flex justify-center items-start gap-2 text-sm hanken-grotesk">
-                  <FaExternalLinkAlt size={16} /> Live Preview
+                  <FaExternalLinkAlt size={16} /> <span className="hidden md:inline">Live Preview</span>
                 </Link>
               )}
               {githubUrl ? (
                 <Link href={githubUrl} target="_blank" className="text-neutral-500 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors flex justify-center items-center gap-2 text-sm hanken-grotesk">
                   <FaGithub size={18} />
-                  Repo URL
+                  <span className="hidden md:inline">Repo URL</span>
                 </Link>
               ) : (
                 <FaGithub size={18} className="text-neutral-300 dark:text-white/10 cursor-not-allowed" />
@@ -58,9 +61,21 @@ export const ProjectCard = ({
           </div>
         </div>
 
-        <p className="text-neutral-600 dark:text-white/60 w-full text-sm leading-relaxed line-clamp-2 hanken-grotesk">
-          {description}
-        </p>
+        <div className="relative">
+          <p className={`text-neutral-600 dark:text-white/60 w-full text-sm leading-relaxed hanken-grotesk ${isExpanded ? '' : 'line-clamp-2'}`}>
+            {description}
+          </p>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-xs text-blue-500 dark:text-blue-400 mt-1 flex md:hidden items-center gap-1 hover:underline ml-auto"
+          >
+            {isExpanded ? (
+              <>Show Less <FaChevronUp size={10} /></>
+            ) : (
+              <>Read More <FaChevronDown size={10} /></>
+            )}
+          </button>
+        </div>
         <p className="text-sm text-neutral-400 dark:text-white/40 font-mono pt-2 instrument-serif-regular-italic">
           {tech?.join(" / ")}
         </p>

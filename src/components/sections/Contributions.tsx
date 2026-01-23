@@ -6,14 +6,14 @@ export default function Contributions() {
   const username = "Sarthak-builds";
 
   return (
-    <section id="contributions" className="py-8 mt-12 md:mt-16">
+    <section id="contributions" className="py-8 mt-6 md:mt-16">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-xl mb-4 instrument-serif-regular-italic text-neutral-900 dark:text-white">
+        <h2 className="text-xl instrument-serif-regular-italic text-white">
           GitHub Contributions
         </h2>
 
         {/* Scalable Container with Hidden Scrollbar */}
-        <div className="rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar px-4 md:px-10 hanken-grotesk scale-110 md:scale-108 w-full md:w-auto bg-neutral-100 dark:bg-black/5 md:bg-transparent">
+        <div className="rounded-xl p-6 shadow-lg overflow-hidden px-4 md:px-10 hanken-grotesk w-full md:w-auto text-white flex justify-center">
           {/* Inner wrapper ensures content width triggers scroll */}
           <div className="w-fit min-w-full md:min-w-0">
             <GitHubCalendar

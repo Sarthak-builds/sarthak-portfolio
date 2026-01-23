@@ -10,15 +10,22 @@ import StatusLine from "../ui/statusLine"
 export const Hero = () => {
   return (
     <div className=" h-auto md:max-h-120 mt-5 md:mt-12 relative flex flex-col pt-4 px-4 md:px-12 ">
-      <div className="flex flex-col md:flex-row gap-2 md:gap-12 items-center md:items-start relative">
-        <div className="md:min-w-45 md:min-h-45 min-w-40 min-h-40 md:top-0 top-5 absolute -left-4 md:left-2 -rotate-8 z-40 border-amber-500 dark:border-amber-100 border-2 rounded-3xl special-gothic block pointer-events-none"></div>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start relative z-10">
 
-        <div className="min-h-50 min-w-50 flex flex-row md:flex-col items-center gap-0 md:gap-0 z-10 w-full md:w-auto justify-center md:justify-start">
-          <Image src="/assets/images/sarthak_mee.jpeg" width={180} height={250} alt="Sarthak" className=" shadow-lg rounded-3xl w-40 md:w-[180px] h-auto object-cover" />
+        {/* Image and Socials Column */}
+        <div className="flex flex-col items-center gap-6 md:gap-4 z-10 w-full md:w-auto">
 
-          <div className="relative group flex flex-col items-start md:items-center justify-center w-fit mx-auto my-2 md:mx-auto">
+          {/* Image Container with Border */}
+          <div className="relative w-fit">
+            {/* Decorative Border */}
+            <div className="absolute inset-0 -rotate-6 rounded-3xl border-2 border-amber-500 dark:border-amber-100 special-gothic pointer-events-none scale-108"></div>
 
-            <div className="hidden md:flex text-sm md:text-base mt-0 md:mt-2 hanken-grotesk text-neutral-800 dark:text-white md:right-10 items-center gap-2 cursor-default relative z-50 md:z-0 -ml-16 md:ml-0 md:top-0 md:static backdrop-blur-sm md:backdrop-blur-none bg-white/80 dark:bg-black/40 md:bg-transparent px-2 rounded-md md:px-0">
+            <Image src="/assets/images/sarthak_mee.jpeg" width={180} height={250} alt="Sarthak" className="relative shadow-lg rounded-3xl w-48 md:w-[250px] h-auto object-cover z-10" />
+          </div>
+
+          <div className="relative group flex flex-col items-center justify-center w-fit">
+
+            <div className="hidden md:flex text-sm md:text-base mt-2 hanken-grotesk text-neutral-800 dark:text-white items-center gap-2 cursor-default relative backdrop-blur-sm bg-white/80 dark:bg-black/40 md:bg-transparent px-2 rounded-md">
               Get in Touch <i className="ri-arrow-down-s-fill md:hidden"></i>
             </div>
 
@@ -26,18 +33,20 @@ export const Hero = () => {
               <i className="ri-arrow-down-s-fill z-50"></i>
             </div>
 
-            <div className="md:hidden flex flex-col items-start ml-6 mt-4 scale-90 origin-top-left">
-              <div className="bg-white/80 dark:bg-white/3 text-sm px-3 py-3 rounded-lg shadow-lg whitespace-nowrap flex gap-1 flex-col backdrop-blur-md">
+            {/* Mobile Socials (Always Visible) */}
+            <div className="md:hidden flex flex-col items-center mt-2 ">
+              <div className="bg-white/80 dark:bg-white/5 text-sm px-8 py-3 rounded-xl shadow-lg whitespace-nowrap flex gap-1 flex-col backdrop-blur-md border border-neutral-100 dark:border-white/10">
                 <SocialLinks></SocialLinks>
-                <div className="mt-2 text-sm text-neutral-700 dark:text-white/80 flex items-center gap-2">
+                <div className="mt-2 text-sm text-neutral-700 dark:text-white/80 flex items-center justify-center gap-2">
                   <FaEnvelope className="text-neutral-900 dark:text-white" /> sarthakshiroty20@gmail.com
                 </div>
-                <div className="mt-1 flex flex-col justify-center hanken-grotesk text-sm text-neutral-500 dark:text-white/50">
+                <div className="mt-1 flex flex-col justify-center items-center hanken-grotesk text-sm text-neutral-500 dark:text-white/50">
                   <p>📍 Indore, India</p>
                 </div>
               </div>
             </div>
 
+            {/* Desktop Hover Socials */}
             <div className="absolute top-12 hidden md:flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100">
               <div className="bg-neutral-100 dark:bg-white/5 text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-3 scale-80 flex-col backdrop-blur-md border border-neutral-200 dark:border-white/10">
                 <SocialLinks></SocialLinks>
@@ -50,7 +59,7 @@ export const Hero = () => {
           </div>
 
         </div>
-        <div className="flex flex-col w-full gap-4 text-left">
+        <div className="flex flex-col w-full gap-4 text-left md:text-left">
           <div className="text-neutral-900 dark:text-white">
             <h1 className=" text-3xl md:text-4xl instrument-serif-regular-italic italic">Hi, I'm Sarthak Shiroty</h1>
             <div className="text-neutral-500 dark:text-white/50 hanken-grotesk text-xs md:text-sm w-full py-1">21 • Engineer • Web Developer • Tech Brother and Builder</div>
@@ -62,7 +71,7 @@ export const Hero = () => {
             <br></br>
             <span className="text-neutral-900 dark:text-white font-medium">When I’m not coding: </span>I’m usually deep down a YouTube video, reading, or geeking out over aviation mechanics.
             <br></br>
-            <div className="flex justify-start">
+            <div className="flex justify-center md:justify-start">
               <StatusLine></StatusLine>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { experienceData } from "@/data/experience";
 
 export const Experience = () => {
     return (
-        <div className="mt-16 mb-12 md:my-24">
+        <div className="mt-6 mb-16 mx-2 md:my-12">
             <h2 className="instrument-serif-regular-italic text-2xl  tracking-tight text-neutral-900 dark:text-white/90">
                 Experience
             </h2>
