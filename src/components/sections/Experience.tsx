@@ -3,13 +3,13 @@ import { experienceData } from "@/data/experience";
 
 export const Experience = () => {
     return (
-        <div className="my-10">
-            <h2 className="instrument-serif-regular-italic text-2xl  tracking-tight  text-white/90">
+        <div className="mt-16 mb-12 md:my-24">
+            <h2 className="instrument-serif-regular-italic text-2xl  tracking-tight text-neutral-900 dark:text-white/90">
                 Experience
             </h2>
 
-            <div className="flex flex-col scale-100 md:scale-95">
-                {experienceData.map((item) => (
+            <div className="flex flex-col scale-100 pl-2 md:pl-4 mt-4 ">
+                {experienceData.map((item, index) => (
                     <Exptag
                         key={item.id}
                         logo={item.logo}
@@ -18,6 +18,8 @@ export const Experience = () => {
                         date={item.date}
                         description={item.description}
                         technologies={item.technologies}
+                        isFirst={index === 0}
+                        isLast={index === experienceData.length - 1}
                     />
                 ))}
             </div>

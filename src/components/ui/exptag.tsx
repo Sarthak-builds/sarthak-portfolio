@@ -1,48 +1,41 @@
-'use client';
-import React, { ReactNode } from "react";
+import { ExperienceCardProps } from "@/types";
+import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-export interface ExperienceCardProps {
-    logo: ReactNode;
-    company: string;
-    role: string;
-    date: string;
-    description: string;
-    technologies?: string;
-};
-
-export const Exptag = ({ logo, company, role, date, description, technologies }: ExperienceCardProps) => {
+export const Exptag = ({ company, role, description, technologies, link, isFirst, isLast }: ExperienceCardProps) => {
     return (
-        <div className="w-full rounded-xl my-4 px-4 md:px-10 hanken-grotesk py-6 inset-shadow-white/10 inset-shadow-sm ">
-            <div className="flex flex-col md:flex-row justify-between gap-4 md:items-start">
-                <div className="flex justify-start items-center gap-4">
-                    <div>
-                        {logo}
-                    </div>
+        <div className="relative pl-8 pb-12 group last:pb-0">
+            {/* Timeline Line - Continuous Connection */}
+            <div
+                className={`absolute left-0 w-[1px] bg-zinc-300 dark:bg-zinc-700 
+                    ${isFirst ? 'top-2' : 'top-0'} 
+                    ${isLast ? 'h-2' : 'bottom-0'}
+                `}
+            />
 
-                    <div>
-                        <h2 className="text-xl capitalize font-medium text-white/90">
-                            {company}
-                        </h2>
-                        <p className="text-sm capitalize text-white/60">
-                            {role}
-                        </p>
-                    </div>
+            {/* Dot Indicator */}
+            <div className="absolute left-[-4.5px] top-2 h-3 w-3 rounded-full border border-zinc-400 dark:border-zinc-600 bg-white dark:bg-black group-hover:border-zinc-600 dark:group-hover:border-zinc-400 transition-colors z-10" />
+
+            <div className="flex flex-col items-start gap-1">
+                {/* Company Name */}
+                <h3 className="instrument-serif-regular text-2xl text-neutral-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-200 transition-colors cursor-pointer flex items-center gap-2">
+                    {link ? <Link href={link} target="_blank">{company}</Link> : company}
+                </h3>
+
+                {/* Role */}
+                <div className="text-base font-semibold text-neutral-700 dark:text-neutral-200 hanken-grotesk">
+                    {role}
                 </div>
 
-                <div className="hanken-grotesk text-white/50 text-sm font-medium flex md:justify-center items-center shrink-0">
-                    <p>{date}</p>
-                </div>
-            </div>
-
-            <div className="hanken-grotesk text-white/70 mt-4 text-[15px] leading-relaxed">
-                <div>
+                {/* Description */}
+                <p className="text-base text-neutral-600 dark:text-zinc-400 hanken-grotesk max-w-2xl mt-2 leading-relaxed">
                     {description}
+                </p>
+
+                {/* Technologies */}
+                <div className="text-sm text-neutral-500 dark:text-zinc-500 mt-2 hanken-grotesk">
+                    {technologies}
                 </div>
-                {technologies && (
-                    <div className="mt-3 text-white/90 capitalize text-sm font-medium tracking-wide">
-                        {technologies}
-                    </div>
-                )}
             </div>
         </div>
     )

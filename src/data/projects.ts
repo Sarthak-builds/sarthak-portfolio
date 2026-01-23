@@ -11,8 +11,8 @@ export interface Project {
 const allProjectsData: Project[] = [
   {
     title: "WebLens",
-    description: "A high-performance web analysis tool. Provides instant SEO metrics, accessibility scores, and performance insights. Analyzed 50+ websites with 3k+ views.",
-    tech: ["React", "Tailwind", "Node.js", "Puppeteer"],
+    description: "A real-time web analysis and insights platform providing a modern interface for exploring and visualizing web-based data.",
+    tech: ["React", "Tailwind CSS", "Redux", "Motion", "Insights API"],
     liveUrl: "https://web-lens-insights.vercel.app/",
     githubUrl: "https://github.com/Sarthak-builds/WebLens",
     image: "/assets/images/weblens.png",
@@ -20,26 +20,25 @@ const allProjectsData: Project[] = [
   },
   {
     title: "LipSync AI",
-    description: "An AI-powered video automation platform. Upload text/audio to generate synchronized lip movements on avatars. Features real-time rendering and Zustand state management.",
-    tech: ["Next.js", "Zustand", "Motion", "Typescript"],
+    description: "An AI-powered lip-synchronization frontend application designed for seamless audio-to-video alignment with a modern, responsive UI.",
+    tech: ["React", "ShadcnUI", "TypeScript", "Tailwind CSS", "Zustand", "Motion"],
     liveUrl: "https://lipsync-rho.vercel.app/register",
     githubUrl: "https://github.com/Sarthak-builds/lipsync-frontend",
-    image: "/assets/images/lipsync.png", 
+    image: "/assets/images/lipsync.png",
     status: "Building",
   },
-  
   {
     title: "Portfolio-Forge",
-    description: "Automated documentation generator for infrastructure as code. Parses Terraform/AWS CDK files to create readable visual graphs.",
-    tech: ["Node.js", "Graphviz", "TypeScript"],
+    description: "A leaderboard and portfolio review platform where users can rate, comment, and view others' portfolios to climb the ranks.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"], 
     githubUrl: "",
     image: "/assets/images/portfolio-forge.png",
     status: "Building",
   },
   {
     title: "SwiftMind",
-    description: "A rapid-ideation tool for developers. create mind maps and flowcharts via keyboard shortcuts. Optimized for speed and minimal friction.",
-    tech: ["React", "ReactFlow", "Zustand"],
+    description: "A high-performance landing page for a rapid-ideation tool, optimized for speed and mental agility with smooth animations.",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://swiftmind-flame.vercel.app/",
     githubUrl: "https://github.com/Sarthak-builds/SwiftMind",
     image: "/assets/images/swiftmind.png",
@@ -47,29 +46,27 @@ const allProjectsData: Project[] = [
   },
   {
     title: "TufPlus",
-    description: "An enhanced educational platform for coding interview preparation. Features progress tracking and spaced repetition algorithms.",
-    tech: ["Next.js", "Prisma", "Postgres", "Redis"],
+    description: "A redesigned landing page for TUF (Take U Forward), providing an enhanced educational platform with smooth user interactions.",
+    tech: ["React", "Tailwind CSS", "Motion"],
     liveUrl: "https://tufplus-zeta.vercel.app/",
     githubUrl: "https://github.com/Sarthak-builds/tufplus",
     image: "/assets/images/tufplus.png",
     status: "Live",
   },
-  
   {
     title: "BrainCloud",
-    description: "Next-generation cloud storage solution integrating AI for smart file organization and semantic search. Currently developing the frontend architecture.",
-    tech: ["Next.js", "AI SDK", "PostgreSQL", "AWS"],
-
-    githubUrl: "https://github.com/Sarthak-builds/braincloud-frontend",
+    description: "A 'Second Brain' application with RAG system for chatting with bookmarks and links. Features a full MERN backend integration.",
+    tech: ["Nextjs", "Typescript", "TailwindCSS", "MongoDB", "Express"],
+    githubUrl: "",
     image: "/assets/images/braincloud.png",
     status: "Building",
   },
 ];
 export const featuredProjects = [
-    allProjectsData[0],
-    allProjectsData[1], 
-    allProjectsData[2], 
-    allProjectsData[3], 
+  allProjectsData[0],
+  allProjectsData[1],
+  allProjectsData[2],
+  allProjectsData[3],
 ];
 
 export const allProjects = allProjectsData;

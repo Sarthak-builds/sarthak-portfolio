@@ -5,8 +5,8 @@ import { stack1, stack2 } from '@/data/stack';
 
 export const Stack = () => {
   return (
-    <div className='mt-20 md:mt-50'>
-      <h2 className='instrument-serif-regular-italic text-xl mb-4 text-white/90'>
+    <div className='mt-36 md:mt-38'>
+      <h2 className='instrument-serif-regular-italic text-xl mb-4 text-neutral-900 dark:text-white/90'>
         Tools and Technologies
       </h2>
 
@@ -23,7 +23,7 @@ export const Stack = () => {
                   className="w-5 h-6"
                   style={{ color: item.color }}
                 />
-                <span className='text-gray-200 whitespace-nowrap'>
+                <span className='text-neutral-700 dark:text-gray-200 whitespace-nowrap'>
                   {item.name}
                 </span>
               </div>
@@ -43,7 +43,7 @@ export const Stack = () => {
                   className="w-6 h-6"
                   style={{ color: item.color }}
                 />
-                <span className='text-gray-200 whitespace-nowrap'>
+                <span className='text-neutral-700 dark:text-gray-200 whitespace-nowrap'>
                   {item.name}
                 </span>
               </div>

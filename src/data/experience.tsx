@@ -16,10 +16,10 @@ const FreelanceLogo = () => (
 export const experienceData: ExperienceItem[] = [
   {
     id: "1",
-    company: "AI Video Automation Platform",
+    company: "AI Lipsync Video Automation Platform",
     role: "Freelance Frontend Developer",
     date: "Nov 2025",
-    description: "Architected the frontend for an AI-powered lip-syncing SaaS. Engineered complex state management flows using Zustand to handle real-time audio visualization and video rendering cues. Optimized media handling with Axios for high-performance uploads.",
+    description: "Architected the frontend for an AI-powered lip-syncing SaaS. Engineered complex state management flows using Zustand to handle real-time audio visualization and video rendering cues. ",
     technologies: "React / Zustand / Motion / Axios / TypeScript",
     logo: <FreelanceLogo />, 
   },
