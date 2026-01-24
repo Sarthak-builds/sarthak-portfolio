@@ -9,7 +9,6 @@ export const CTA = () => {
                 <h1 className="instrument-serif-regular-italic text-3xl tracking-tight text-white text-center px-4">
                     Get in Touch. Let's Build.
                 </h1>
-                {/* <p className="hanken-grotesk text-white/80">You can contact me via email at <span className="text-white font-medium">sarthakshiroty20@gmail.com</span></p> */}
                 <p className="hanken-grotesk text-white/80 text-center px-4">
                     <span className="text-white font-medium">Open to Work:</span> Full-Time, Freelance, or Collabs. <span className="text-white font-medium">Let's talk.</span>
                 </p>

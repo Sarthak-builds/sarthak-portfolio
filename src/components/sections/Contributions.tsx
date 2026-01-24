@@ -12,9 +12,7 @@ export default function Contributions() {
           GitHub Contributions
         </h2>
 
-        {/* Scalable Container with Hidden Scrollbar */}
         <div className="rounded-xl p-6 shadow-lg overflow-hidden px-4 md:px-10 hanken-grotesk w-full md:w-auto text-white flex justify-center">
-          {/* Inner wrapper ensures content width triggers scroll */}
           <div className="w-fit min-w-full md:min-w-0">
             <GitHubCalendar
               username={username}

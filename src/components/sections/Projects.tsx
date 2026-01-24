@@ -9,9 +9,7 @@ export const Projects = () => {
                 <h1 className="instrument-serif-regular-italic text-2xl text-white">
                     Proof of Work
                 </h1>
-                {/* <span className="text-white/40 hanken-grotesk text-lg">
-                    — Featured Projects
-                </span> */}
+
             </div>
             <div className="grid gap-6 md:grid-cols-2">
                 {featuredProjects.map((project, index) => (
