@@ -41,7 +41,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'Buy Me a Coffee',
-    href: 'https://buymeacoffee.com/sarthakbuilds',
+    href: 'https://buymeacoffee.com/Sarthakbuilds',
     icon: FaCoffee,
     ariaLabel: 'Support my work',
     className: 'text-cyan-500 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-500 transition-colors duration-200 hover:scale-110'

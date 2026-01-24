@@ -63,7 +63,7 @@ export const Hero = () => {
 
           <div className="text-neutral-600 dark:text-white/60 hanken-grotesk leading-7 md:leading-8 text-base md:text-base px-0">
             I am a <span className="text-neutral-900 dark:text-white font-medium">product-focused engineer</span> who build<span className="text-neutral-900 dark:text-white font-medium"> pixel-perfect UI</span>  with a focus on refining the user experience. <br>
-            </br>Self-taught <span className="text-neutral-900 dark:text-white font-medium"> Web developer, driven by designer’s intuition.</span> breaking the internet to learn how it works. Currently building portfolio-forge to understand backend.
+            </br>Self-taught <span className="text-neutral-900 dark:text-white font-medium"> Web developer, driven by designer’s intuition.</span> Breaking the internet to learn how it works. Currently building portfolio-forge to understand backend.
             <br></br>
             <span className="text-neutral-900 dark:text-white font-medium">When I’m not coding: </span>I’m usually deep down a YouTube video, reading, or geeking out over aviation mechanics.
             <br></br>
