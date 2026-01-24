@@ -9,7 +9,7 @@ import StatusLine from "../ui/statusLine"
 
 export const Hero = () => {
   return (
-    <div className=" h-auto md:max-h-120 mt-5 md:mt-12 relative flex flex-col pt-4 px-4 md:px-12 ">
+    <div className=" h-auto md:max-h-120  md:mt-12 relative flex flex-col pt-4 px-4 md:px-12 ">
       <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start relative z-10">
 
         {/* Image and Socials Column */}
@@ -20,7 +20,7 @@ export const Hero = () => {
             {/* Decorative Border */}
             <div className="absolute inset-0 -rotate-6 rounded-3xl border-2 border-amber-500 dark:border-amber-100 special-gothic pointer-events-none scale-108"></div>
 
-            <Image src="/assets/images/sarthak_mee.jpeg" width={180} height={250} alt="Sarthak" className="relative shadow-lg rounded-3xl w-48 md:w-[250px] h-auto object-cover z-10" />
+            <Image src="/assets/images/sarthak_mee.jpeg" width={180} height={250} alt="Sarthak" className="relative shadow-lg rounded-3xl w-48 md:w-[250px] h-auto object-cover z-10 " />
           </div>
 
           <div className="relative group flex flex-col items-center justify-center w-fit">
@@ -35,7 +35,7 @@ export const Hero = () => {
 
             {/* Mobile Socials (Always Visible) */}
             <div className="md:hidden flex flex-col items-center mt-2 ">
-              <div className="bg-white/80 dark:bg-white/5 text-sm px-8 py-3 rounded-xl shadow-lg whitespace-nowrap flex gap-1 flex-col backdrop-blur-md border border-neutral-100 dark:border-white/10">
+              <div className="bg-white/80 dark:bg-white/4 text-sm px-8 py-3 rounded-xl shadow-lg whitespace-nowrap flex gap-1 flex-col backdrop-blur-md border-none bg-linear-to-t from-sky-500/30 to-black">
                 <SocialLinks></SocialLinks>
                 <div className="mt-2 text-sm text-neutral-700 dark:text-white/80 flex items-center justify-center gap-2">
                   <FaEnvelope className="text-neutral-900 dark:text-white" /> sarthakshiroty20@gmail.com
@@ -47,9 +47,10 @@ export const Hero = () => {
             </div>
 
             {/* Desktop Hover Socials */}
-            <div className="absolute top-12 hidden md:flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100">
-              <div className="bg-neutral-100 dark:bg-white/5 text-sm px-4 py-4 rounded-lg shadow-lg whitespace-nowrap flex gap-3 scale-80 flex-col backdrop-blur-md border border-neutral-200 dark:border-white/10">
-                <SocialLinks></SocialLinks>
+            <div className="absolute top-12 hidden md:flex flex-col items-center invisible opacity-0 group-hover:visible group-hover:opacity-100 scale-y-50 group-hover:scale-y-100 origin-top ease-in-out transition-all duration-200 z-50 scale-x-50 group-hover:scale-x-100  ">
+              <div className=" text-sm px-4 py-4 rounded-lg  whitespace-nowrap flex gap-3 scale-80 flex-col backdrop-blur-md bg-linear-to-t from-sky-500/30 to-black ">
+              <div className="w-full flex justify-center"><SocialLinks></SocialLinks></div>
+                
                 <div className="mt-2 flex flex-col justify-center hanken-grotesk text-lg text-neutral-800 dark:text-white">
                   <p>📍 Indore, India</p>
                   <p className="flex justify-center items-center gap-2"><FaEnvelope></FaEnvelope>sarthakshiroty20@gmail.com</p>

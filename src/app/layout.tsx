@@ -54,7 +54,7 @@ export default function RootLayout({
         rel="stylesheet"
       /></head>
       <body
-        className={`font-hanken-grotesk antialiased bg-black/97`}
+        className={`font-hanken-grotesk antialiased bg-black/96`}
       >
 
         {children}
