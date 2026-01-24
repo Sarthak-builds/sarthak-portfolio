@@ -68,6 +68,7 @@ export default function RootLayout({
             <BlurFade>{children}</BlurFade>
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
