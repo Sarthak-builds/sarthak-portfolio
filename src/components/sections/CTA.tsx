@@ -6,7 +6,7 @@ export const CTA = () => {
                 className="absolute inset-0 bg-[url('/assets/images/cta.jpg')] bg-cover bg-center brightness-[0.3] grayscale-30"
             />
             <div className="relative z-10 flex flex-col items-center gap-2">
-                <h1 className="instrument-serif-regular-italic text-3xl tracking-tight text-white text-center px-4">
+                <h1 className="instrument-serif-regular-italic text-2xl md:text-3xl tracking-tight text-white text-center px-4">
                     Get in Touch. Let's Build.
                 </h1>
                 <p className="hanken-grotesk text-white/80 text-center px-4">

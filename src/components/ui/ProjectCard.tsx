@@ -76,7 +76,7 @@ export const ProjectCard = ({
             )}
           </button>
         </div>
-        <p className="text-sm text-neutral-400 dark:text-white/40 font-mono pt-2 instrument-serif-regular-italic">
+        <p className="text-xs text-neutral-400 dark:text-white/40 font-mono pt-2 instrument-serif-regular-italic">
           {tech?.join(" / ")}
         </p>
       </div>

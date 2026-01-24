@@ -58,13 +58,13 @@ export const Hero = () => {
         <div className="flex flex-col w-full gap-4 text-left md:text-left">
           <div className="text-neutral-900 dark:text-white">
             <h1 className=" text-2xl md:text-4xl instrument-serif-regular-italic">Hi, I'm Sarthak Shiroty</h1>
-            <div className="text-neutral-500 dark:text-white/50 hanken-grotesk text-xs md:text-sm w-full py-1">21 • Engineer • Web Developer • Tech Brother and Builder</div>
+            <div className="text-white/50 hanken-grotesk text-xs md:text-sm w-full py-1">21 • Engineer • Web Developer • Tech Brother and Builder</div>
           </div>
 
-          <div className="text-neutral-600 dark:text-white/60 hanken-grotesk leading-7 md:leading-8 text-sm md:text-base px-0">
-            I build<span className="text-neutral-900 dark:text-white font-medium"> pixel-perfect UI</span>  with a focus on refining the user experience. <br>
-            </br>Self-taught <span className="text-neutral-900 dark:text-white font-medium"> Web developer.</span> Breaking the internet to learn how it works.<br></br>
-            <span className="text-neutral-900 dark:text-white font-medium">When I’m not coding: </span>I’m usually reading, or geeking out over aviation mechanics.
+          <div className="text-white/60 hanken-grotesk leading-7 md:leading-8 text-sm md:text-base px-0">
+            I build<span className="text-white font-medium"> pixel-perfect UI</span>  with a focus on refining the user experience. <br>
+            </br>Self-taught <span className="text-white font-medium"> Web developer.</span> Breaking the internet to learn how it works.<br></br>
+            <span className="text-white font-medium">When I’m not coding: </span>I’m usually reading, or geeking out over aviation mechanics.
             <br></br>
             <div className="flex justify-center md:justify-start mt-3 mb-7">
               <StatusLine></StatusLine>
