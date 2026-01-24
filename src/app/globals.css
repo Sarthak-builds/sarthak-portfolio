@@ -1,25 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap');
 @import "tailwindcss";
-
-.special-gothic {
-  font-family: "Special Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.roboto-slab {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
 
 .hanken-grotesk {
   font-family: "Hanken Grotesk", sans-serif;
@@ -37,20 +17,6 @@
 .instrument-serif-regular-italic {
   font-family: "Instrument Serif", serif;
   font-weight: 100;
-}
-
-.space-grotesk {
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-
-.inter-tight {
-  font-family: "Inter Tight", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
 }
 
 @layer utilities {

@@ -6,7 +6,7 @@ export interface ExperienceCardProps {
     company: string;
     role: string;
     date: string;
-    description: string;
+    description: string | string[];
     technologies?: string;
     link?: string;
     isFirst?: boolean;

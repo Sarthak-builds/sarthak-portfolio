@@ -11,7 +11,7 @@ export interface Project {
 const allProjectsData: Project[] = [
   {
     title: "WebLens",
-    description: "A real-time web analysis and insights platform providing a modern interface for exploring and visualizing web-based data.",
+    description: "A real-time web analysis and insights platform providing an interface for visualizing web-based data.",
     tech: ["React", "Tailwind CSS", "Redux", "Motion", "Insights API"],
     liveUrl: "https://web-lens-insights.vercel.app/",
     githubUrl: "https://github.com/Sarthak-builds/WebLens",
@@ -20,7 +20,7 @@ const allProjectsData: Project[] = [
   },
   {
     title: "LipSync AI",
-    description: "An AI-powered lip-synchronization frontend application designed for seamless audio-to-video alignment with a modern, responsive UI.",
+    description: "An AI-powered lip-sync tool designed for audio-to-video alignment with a modern UI.",
     tech: ["React", "ShadcnUI", "TypeScript", "Tailwind CSS", "Zustand", "Motion"],
     liveUrl: "https://lipsync-rho.vercel.app/register",
     githubUrl: "https://github.com/Sarthak-builds/lipsync-frontend",
@@ -29,15 +29,15 @@ const allProjectsData: Project[] = [
   },
   {
     title: "Portfolio-Forge",
-    description: "A leaderboard and portfolio review platform where users can rate, comment, and view others' portfolios to climb the ranks.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"], 
+    description: "A leaderboard platform for rating and reviewing portfolios.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     githubUrl: "",
     image: "/assets/images/portfolio-forge.png",
     status: "Building",
   },
   {
     title: "SwiftMind",
-    description: "A high-performance landing page for a rapid-ideation tool, optimized for speed and mental agility with smooth animations.",
+    description: "High-performance landing page for a rapid-ideation tool.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://swiftmind-flame.vercel.app/",
     githubUrl: "https://github.com/Sarthak-builds/SwiftMind",
@@ -46,7 +46,7 @@ const allProjectsData: Project[] = [
   },
   {
     title: "TufPlus",
-    description: "A redesigned landing page for TUF (Take U Forward), providing an enhanced educational platform with smooth user interactions.",
+    description: "Redesigned landing page for TUF with enhanced interactions.",
     tech: ["React", "Tailwind CSS", "Motion"],
     liveUrl: "https://tufplus-zeta.vercel.app/",
     githubUrl: "https://github.com/Sarthak-builds/tufplus",
@@ -55,7 +55,7 @@ const allProjectsData: Project[] = [
   },
   {
     title: "BrainCloud",
-    description: "A 'Second Brain' application with RAG system for chatting with bookmarks and links. Features a full MERN backend integration.",
+    description: "'Second Brain' app with RAG for chatting with bookmarks.",
     tech: ["Nextjs", "Typescript", "TailwindCSS", "MongoDB", "Express"],
     githubUrl: "",
     image: "/assets/images/braincloud.png",

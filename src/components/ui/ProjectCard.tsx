@@ -67,7 +67,7 @@ export const ProjectCard = ({
           </p>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="text-xs text-blue-500 dark:text-blue-400 mt-1 flex md:hidden items-center gap-1 hover:underline ml-auto"
+            className="text-xs text-white/40 dark:text-white/40 mt-1 flex md:hidden items-center gap-1 hover:underline ml-auto"
           >
             {isExpanded ? (
               <>Show Less <FaChevronUp size={10} /></>

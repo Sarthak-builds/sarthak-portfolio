@@ -10,11 +10,11 @@ export const Stack = () => {
         Tools and Technologies
       </h2>
 
-      <div className='flex flex-col gap-4 w-full overflow-hidden hanken-grotesk scale-90 md:scale-100'>
+      <div className='flex flex-col gap-4 w-full overflow-hidden md:overflow-hidden hanken-grotesk scale-90 md:scale-100'>
         <motion.div
           className='flex flex-nowrap gap-2 md:gap-4 hanken-grotesk'
           animate={{ x: "-50%" }}
-          transition={{ ease: "linear", duration: 60, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
         >
           {[...stack1, ...stack1, ...stack1].map((item, index) => (
             <Batch key={`${item.name}-${index}`}>
@@ -34,7 +34,7 @@ export const Stack = () => {
           className='flex flex-nowrap gap-4'
           initial={{ x: "-50%" }}
           animate={{ x: 0 }}
-          transition={{ ease: "linear", duration: 60, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
         >
           {[...stack2, ...stack2, ...stack2].map((item, index) => (
             <Batch key={`${item.name}-${index}`}>

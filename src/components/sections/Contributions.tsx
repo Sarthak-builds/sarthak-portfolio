@@ -7,12 +7,12 @@ export default function Contributions() {
 
   return (
     <section id="contributions" className="py-8 mt-6 md:mt-16">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-xl instrument-serif-regular-italic text-white">
           GitHub Contributions
         </h2>
 
-        <div className="rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar px-4 md:px-10 hanken-grotesk w-full md:w-auto text-white flex justify-center">
+        <div className="rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar px-1 md:px-8 hanken-grotesk w-full md:w-auto text-white flex justify-center scale-95 md:scale-100">
           <div className="w-fit min-w-full md:min-w-0">
             <GitHubCalendar
               username={username}
