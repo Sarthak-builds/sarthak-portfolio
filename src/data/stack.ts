@@ -2,7 +2,7 @@ import {
   SiNextdotjs, SiReact, SiTailwindcss, SiFramer, SiGreensock, 
   SiHtml5, SiCss3, SiJavascript, SiTypescript, SiShadcnui,
   SiNodedotjs, SiPrisma, SiPostgresql, SiMongodb, 
-  SiAxios, SiPython, SiGit, SiGithub, SiPostman
+  SiAxios, SiPython, SiGit, SiGithub, SiPostman, SiCplusplus
 } from 'react-icons/si'
 import { FaStore } from 'react-icons/fa' 
 import type { IconType } from 'react-icons'
@@ -33,7 +33,7 @@ export const stack2: TechItem[] = [
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "Zustand", icon: FaStore, color: "#764ABC" }, 
   { name: "Axios", icon: SiAxios, color: "#5A29E4" },
-  { name: "Python", icon: SiPython, color: "#3776AB" },
+  { name: "C++", icon: SiCplusplus, color: "#3776AB" },
   { name: "Git", icon: SiGit, color: "#F05032" },
   { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
   { name: "Postman", icon: SiPostman, color: "#FF6C37" },
