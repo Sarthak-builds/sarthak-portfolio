@@ -27,8 +27,7 @@ export const stack1: TechItem[] = [
 ];
 
 export const stack2: TechItem[] = [
-  { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-  { name: "Prisma", icon: SiPrisma, color: "#FFFFFF" }, 
+  { name: "Node.js", icon: SiNodedotjs, color: "#339933" }, 
   { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "Zustand", icon: FaStore, color: "#764ABC" }, 

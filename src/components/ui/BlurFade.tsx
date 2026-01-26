@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 export const BlurFade = ({ children }: { children: React.ReactNode }) => {
     return (
         <motion.div
-            initial={{ filter: "blur(20px)", opacity: 0 }}
-            animate={{ filter: "blur(0px)", opacity: 1 }}
-            transition={{ duration: 0.4, ease: "easeOut" }} 
+            initial={{ filter: "blur(20px)" }}
+            animate={{ filter: "blur(0px)" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="w-full h-full"
         >
             {children}
