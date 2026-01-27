@@ -63,7 +63,7 @@ export const Hero = () => {
 
           <div className="text-white/60 hanken-grotesk leading-7 md:leading-8 text-sm md:text-base px-0">
             I build<span className="text-white font-medium"> pixel-perfect UI</span>  with a focus on refining the user experience. <br>
-            </br>Self-learned <span className="text-white font-medium"> Web developer.</span> Breaking the internet to learn how it works.<br></br>
+            </br>Self-taught <span className="text-white font-medium"> Web developer.</span> Breaking the internet to learn how it works.<br></br>
             <span className="text-white font-medium">When I’m not coding: </span>I’m usually reading, or geeking out over aviation mechanics.
             <br></br>
             <div className="flex justify-center md:justify-start mt-3 mb-7">

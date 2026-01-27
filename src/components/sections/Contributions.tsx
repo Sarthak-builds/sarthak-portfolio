@@ -12,8 +12,8 @@ export default function Contributions() {
           GitHub Contributions
         </h2>
 
-        <div className="rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar px-1 md:px-8 hanken-grotesk w-full md:w-auto text-white flex justify-center scale-95 md:scale-100">
-          <div className="w-fit min-w-full md:min-w-0">
+        <div className="rounded-xl p-6 shadow-lg overflow-x-auto no-scrollbar [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] px-1 md:px-8 hanken-grotesk w-full text-white flex justify-center scale-95 md:scale-100">
+          <div className="w-fit min-w-full md:min-w-0 no-scrollbar [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             <GitHubCalendar
               username={username}
               blockSize={13}
