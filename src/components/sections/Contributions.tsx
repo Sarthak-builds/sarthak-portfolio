@@ -20,8 +20,8 @@ export default function Contributions() {
               blockMargin={4}
               fontSize={14}
               theme={{
-                light: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127'],
-                dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+                light: ['#ebedf0', '#93c5fd', '#60a5fa', '#3b82f6', '#2563eb'],
+                dark: ['#161b22', '#1e3a8a', '#1d4ed8', '#2563eb', '#60a5fa'],
               }}
               style={{
                 color: 'inherit',
@@ -31,7 +31,7 @@ export default function Contributions() {
         </div>
 
         <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-6">
-          "A fresh start for 2026: Turning these tiles green, one commit at a time."
+          "A fresh start for 2026: Turning these tiles blue, one commit at a time."
         </p>
       </div>
     </section>
