@@ -49,13 +49,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head><link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
         rel="stylesheet"
       /></head>
       <body
-        className={`font-hanken-grotesk antialiased`}
+        className={`inter-tight antialiased`}
       >
         <div className="min-h-screen w-full relative bg-black">
           <div

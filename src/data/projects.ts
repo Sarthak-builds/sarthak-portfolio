@@ -25,7 +25,7 @@ const allProjectsData: Project[] = [
     liveUrl: "https://lipsync-rho.vercel.app/register",
     githubUrl: "https://github.com/Sarthak-builds/lipsync-frontend",
     image: "/assets/images/lipsync.png",
-    status: "Building",
+    status: "Live",
   },
   {
     title: "Portfolio-Forge",
