@@ -61,7 +61,7 @@ export default function RootLayout({
           <div
             className="absolute inset-0 z-0 pointer-events-none"
             style={{
-              background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
+              background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.25), transparent 70%), #000000",
             }}
           />
           <div className="relative z-10">
