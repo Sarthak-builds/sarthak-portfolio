@@ -50,10 +50,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head><link
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
-        rel="stylesheet"
-      /></head>
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="4acc163c-4d62-4460-823e-2a6c274ee402"></script>
+      </head>
       <body
         className={`inter-tight antialiased`}
       >
