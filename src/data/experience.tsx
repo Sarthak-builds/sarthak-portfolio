@@ -32,7 +32,7 @@ export const experienceData: ExperienceItem[] = [
       "Optimised component structure, reducing render overhead across the app",
       "Implemented OneSignal push notifications to improve user engagement and retention"
     ],
-    technologies: "React / JavaScript / REST APIs / OneSignal",
+    technologies: "Nextjs / Typescript / Tanstack-Query / REST APIs / OneSignal",
     logo: <PFCclubLogo />,
   },
   {
