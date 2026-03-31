@@ -3,9 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Project } from "@/data/projects";
-import { MultilineText } from "./MultilineText";
 
 export const ProjectCard = ({
   title,
@@ -16,6 +15,7 @@ export const ProjectCard = ({
   image,
   status
 }: Project) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const isBuilding = status === "Building";
   const badgeColor = isBuilding
@@ -25,7 +25,7 @@ export const ProjectCard = ({
   return (
     <div className="group hanken-grotesk rounded-2xl overflow-hidden transition-colors duration-300">
       <div className="w-full relative aspect-video overflow-hidden">
-        <div data-fish-label={isBuilding ? "Coming Soon! 🚧" : "Check it out! 🚀"} className={`absolute top-3 right-3 z-10 px-3 py-1 rounded-full text-xs font-medium border backdrop-blur-md ${badgeColor}`}>
+        <div className={`absolute top-3 right-3 z-10 px-3 py-1 rounded-full text-xs font-medium border backdrop-blur-md ${badgeColor}`}>
           {status === "Building" ? "In Progress" : "Live"}
         </div>
         <div className="relative w-full h-full">
@@ -39,7 +39,7 @@ export const ProjectCard = ({
         </div>
       </div>
       <div className="px-5 py-4 space-y-3 bg-white dark:bg-black border-t border-neutral-100 dark:border-none">
-        <div className="flex justify-between items-center" data-fish-label={`Project: ${title}`}>
+        <div className="flex justify-between items-center">
           <h1 className="text-neutral-900 dark:text-white text-xl tracking-tight instrument-serif-regular-italic">{title}</h1>
 
           <div className="flex gap-3">
@@ -62,14 +62,19 @@ export const ProjectCard = ({
         </div>
 
         <div className="relative">
-          <MultilineText
-            text={description}
-            maxLines={2}
-            lineHeight={24}
-            fontSize="14px"
-            fontFamily="'Inter Tight', sans-serif"
-            className="text-neutral-600 dark:text-white/60 w-full text-sm leading-relaxed"
-          />
+          <p className={`text-neutral-600 dark:text-white/60 w-full text-sm leading-relaxed hanken-grotesk ${isExpanded ? '' : 'line-clamp-2'}`}>
+            {description}
+          </p>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-xs text-white/40 dark:text-white/40 mt-1 flex md:hidden items-center gap-1 hover:underline ml-auto"
+          >
+            {isExpanded ? (
+              <>Show Less <FaChevronUp size={10} /></>
+            ) : (
+              <>Read More <FaChevronDown size={10} /></>
+            )}
+          </button>
         </div>
         <p className="text-xs text-neutral-400 dark:text-white/40 font-mono pt-2 instrument-serif-regular-italic">
           {tech?.join(" / ")}

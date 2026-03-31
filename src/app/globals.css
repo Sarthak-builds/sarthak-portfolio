@@ -62,41 +62,4 @@
     scrollbar-width: none;
     /* Firefox */
   }
-
-  .mesh-grid {
-    background-image: 
-      radial-gradient(circle at 1px 1px, var(--grid-color) 1px, transparent 0);
-    background-size: 24px 24px;
-  }
-
-  .scanlines {
-    position: relative;
-  }
-  .scanlines::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      transparent 50%,
-      rgba(0, 0, 0, 0.05) 50%
-    );
-    background-size: 100% 4px;
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  .pixel-grid {
-    font-family: var(--font-geist-pixel-grid), sans-serif;
-    font-size: 1.1em;
-    image-rendering: pixelated;
-  }
-}
-
-:root {
-  --grid-color: rgba(0, 0, 0, 0.1);
-}
-
-.dark {
-  --grid-color: rgba(255, 255, 255, 0.08);
 }

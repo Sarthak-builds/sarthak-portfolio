@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import { BlurFade } from "@/components/ui/BlurFade";
-import { FishCursor } from "@/components/ui/FishCursor";
 
 
 export const metadata: Metadata = {
@@ -44,17 +43,13 @@ export const metadata: Metadata = {
   },
 };
 
-import { ThemeProvider } from "@/components/ThemeProvider";
-import Navbar from "@/components/Navbar";
-import { GeistPixelGrid } from "geist/font/pixel";
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistPixelGrid.variable} scroll-smooth`} suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth">
       <head>
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
@@ -63,23 +58,20 @@ export default function RootLayout({
         <script defer src="https://cloud.umami.is/script.js" data-website-id="4acc163c-4d62-4460-823e-2a6c274ee402"></script>
       </head>
       <body
-        className={`inter-tight antialiased transition-all duration-300 min-h-screen bg-white dark:bg-[#0a0a0a] text-neutral-900 dark:text-neutral-100 flex flex-col`}
+        className={`inter-tight antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="fixed inset-0 z-[-1] mesh-grid" />
-          <div className="relative z-[100]">
-            <Navbar />
-          </div>
-          <div className="relative z-10 pt-20 max-w-4xl mx-auto w-full px-4 md:px-10 flex-1">
+        <div className="min-h-screen w-full relative bg-black">
+          <div
+            className="absolute inset-0 z-0 pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.25), transparent 70%), #000000",
+            }}
+          />
+          <div className="relative z-10">
             <BlurFade>{children}</BlurFade>
           </div>
-          <Analytics />
-        </ThemeProvider>
+        </div>
+        <Analytics />
       </body>
     </html>
   );

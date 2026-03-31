@@ -5,8 +5,8 @@ import { stack1, stack2 } from '@/data/stack';
 
 export const Stack = () => {
   return (
-    <div id="stack" className='mt-38 md:mt-38'>
-      <h2 className="dot-matrix text-2xl mb-8 tracking-tighter text-neutral-900 dark:text-neutral-100 uppercase">
+    <div className='mt-38 md:mt-38'>
+      <h2 className='instrument-serif-regular-italic text-xl mb-4 text-neutral-900 dark:text-white/90'>
         Tools and Technologies
       </h2>
 
