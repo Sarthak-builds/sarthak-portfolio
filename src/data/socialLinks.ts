@@ -8,6 +8,7 @@ export interface SocialLink {
   icon: IconType
   ariaLabel: string
   className: string
+  image?: string
 }
 
 export const socialLinks: SocialLink[] = [
@@ -16,14 +17,16 @@ export const socialLinks: SocialLink[] = [
     href: 'https://x.com/Sarthakbuilds',
     icon: FaXTwitter,
     ariaLabel: 'X / Twitter profile',
-    className: 'text-neutral-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-200 hover:scale-110'
+    className: 'text-neutral-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-200 hover:scale-110',
+    image: '/assets/images/twitter_profile.png'
   },
   {
     name: 'GitHub',
     href: 'https://github.com/Sarthak-builds',
     icon: FaGithub,
     ariaLabel: 'GitHub profile',
-    className: 'text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-500 transition-colors duration-200 hover:scale-110'
+    className: 'text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-500 transition-colors duration-200 hover:scale-110',
+    image: '/assets/images/github_profile.png'
   },
   {
     name: 'LinkedIn',

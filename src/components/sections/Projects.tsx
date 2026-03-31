@@ -4,13 +4,10 @@ import { featuredProjects } from "@/data/projects";
 
 export const Projects = () => {
     return (
-        <div className="w-full md:mt-12 mt-1">
-            <div className="flex items-center gap-3 mb-8 justify-start">
-                <h1 className="instrument-serif-regular-italic text-2xl text-white">
-                    Proof of Work
-                </h1>
-
-            </div>
+        <div id="projects" className="w-full md:mt-12 mt-1">
+            <h2 className="dot-matrix text-2xl mb-8 tracking-tighter text-neutral-900 dark:text-neutral-100 uppercase">
+                Proof of Work
+            </h2>
             <div className="grid gap-6 md:grid-cols-2">
                 {featuredProjects.map((project, index) => (
                     <ProjectCard
