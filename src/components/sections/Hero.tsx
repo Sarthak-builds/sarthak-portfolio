@@ -1,9 +1,8 @@
 'use client';
 
 import Image from "next/image"
-import GuitarString from "../ui/GuitarString"
-import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi"
-import Link from "next/link"
+import SpotifyBar from "../ui/SpotifyBar"
+import SocialLinks from "../ui/SocialLinks"
 
 export const Hero = () => {
   return (
@@ -13,33 +12,35 @@ export const Hero = () => {
         {/* Left: Image (Photo Booth Style) and Social Links */}
         <div className="w-full md:w-[35%] flex flex-col items-center md:items-start">
           <div className="flex flex-col items-center gap-4 w-full max-w-[280px]">
-            <div className="bg-[#111111] p-2.5 rounded-xl shadow-2xl w-full transform -rotate-2 border border-neutral-800">
-              <div className="flex items-center gap-2 px-2 pb-2 pt-1">
+            <div className="bg-[#111111] p-2.5 rounded-xl shadow-2xl w-full transform -rotate-2 border border-neutral-800 group/image">
+              <div className="flex items-center gap-2 px-2 pb-2 pt-1 border-b border-neutral-800 mb-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
                 <span className="text-[10px] text-neutral-500 font-medium ml-2 tracking-wide">  📍Indore, India</span>
               </div>
-              <Image 
-                src="/assets/images/sarthak_mee.jpeg" 
-                width={300} 
-                height={400} 
-                alt="Sarthak" 
-                priority 
-                className="w-full h-auto rounded-lg object-cover grayscale-0" 
-              />
+              <div className="relative overflow-hidden rounded-lg min-h-[240px]">
+                <Image 
+                  src="/assets/images/sarthak_mee.jpeg" 
+                  width={300} 
+                  height={400} 
+                  alt="Sarthak" 
+                  priority 
+                  className="w-full h-auto object-cover absolute inset-0 transition-opacity duration-700 opacity-100 group-hover/image:opacity-0" 
+                />
+                <Image 
+                  src="/assets/images/sarthak_meee.jpeg" 
+                  width={300} 
+                  height={400} 
+                  alt="Sarthak Hover" 
+                  priority 
+                  className="w-full h-auto object-cover absolute inset-0 transition-opacity duration-700 opacity-0 group-hover/image:opacity-100 scale-105" 
+                />
+              </div>
             </div>
             
-            {/* <div className="flex items-center justify-center gap-2 text-sm text-neutral-400 inter-tight mt-2 w-full">
-              <span className="text-[#f43f5e] text-lg leading-none">📍</span> 
-              <span>Indore, India</span>
-            </div> */}
-            
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 w-full text-neutral-400">
-              <Link href="https://x.com/Sarthakbuilds" target="_blank" className="hover:text-white transition-colors flex items-center gap-2"><FiTwitter className="w-5 h-5" /></Link>
-              <Link href="https://github.com/Sarthak-builds" target="_blank" className="hover:text-green-400 transition-colors flex items-center gap-2"><FiGithub className="w-5 h-5" /></Link>
-              <Link href="https://in.linkedin.com/in/sarthak-shiroty-8240bb357" target="_blank" className="hover:text-blue-400 transition-colors flex items-center gap-2"><FiLinkedin className="w-5 h-5" /></Link>
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=sarthakshiroty20@gmail.com" target="_blank" className="hover:text-white transition-colors flex items-center gap-2"><FiMail className="w-5 h-5" /></Link>
+            <div className="flex gap-4 py-3 px-3 items-center justify-center w-full mt-2">
+              <SocialLinks />
             </div>
           </div>
         </div>
@@ -52,11 +53,9 @@ export const Hero = () => {
           
           <div className="inter-tight text-neutral-300 text-[#a1a1aa] text-base md:text-base leading-relaxed flex flex-col gap-5">
             <p>
-              Product-focused Engineer who ships fast. I turn ideas into polished products and obsess over the details that make software feel right.
+              Product-focused Engineer who ships fast. I turn ideas into polished products and obsess over the details that make software feel right. Breaking the internet to learn how it works.
             </p>
-            <p>
-              Self-taught <span className="text-white font-medium">Web developer.</span> Breaking the internet to learn how it works.
-            </p>
+            
             <p>
               I build <span className="text-white font-medium">pixel-perfect UI</span> with a focus on refining the user experience. When I'm not coding: I'm usually reading, or geeking out over aviation mechanics.
             </p>
@@ -69,9 +68,9 @@ export const Hero = () => {
 
       </div>
 
-      {/* Separator String */}
-      <div className="relative mt-4 w-full">
-        <GuitarString />
+      {/* Spotify Status Bar */}
+      <div className="relative mt-12 w-full max-w-[500px]">
+        <SpotifyBar />
       </div>
     </div>
   )

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import { BlurFade } from "@/components/ui/BlurFade";
-
 
 export const metadata: Metadata = {
   title: {
@@ -43,6 +41,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { Navbar } from "@/components/ui/Navbar";
+import OnekoCat from "@/components/ui/OnekoCat";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,6 +61,8 @@ export default function RootLayout({
       <body
         className={`inter-tight antialiased`}
       >
+        <Navbar />
+        <OnekoCat />
         <div className="min-h-screen w-full relative bg-black">
           <div
             className="absolute inset-0 z-0 pointer-events-none"
@@ -67,11 +70,11 @@ export default function RootLayout({
               background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.25), transparent 70%), #000000",
             }}
           />
-          <div className="relative z-10">
+          <div className="relative z-10 pt-20">
             <BlurFade>{children}</BlurFade>
           </div>
         </div>
-        <Analytics />
+
       </body>
     </html>
   );

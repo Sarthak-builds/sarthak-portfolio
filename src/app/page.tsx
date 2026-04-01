@@ -15,10 +15,11 @@ export default function Home() {
       <ScrollProgress />
       
       <Hero></Hero>
+       <Experience></Experience>
       <Stack></Stack>
-      <Contributions></Contributions>
-      <Experience></Experience>
       <Projects></Projects>
+      <Contributions></Contributions>
+     
       
       <div className="flex justify-center w-full mt-10 mb-2">
         <UmamiCounter />
