@@ -47,6 +47,14 @@
   font-weight: 100;
 }
 
+.font-pixel-grid {
+  font-family: var(--font-geist-pixel-grid);
+}
+
+.font-pixel-square {
+  font-family: var(--font-geist-pixel-square);
+}
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;

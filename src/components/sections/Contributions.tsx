@@ -6,7 +6,7 @@ export default function Contributions() {
   const username = "Sarthak-builds";
 
   return (
-    <section id="contributions" className="py-8 mt-6 md:mt-16">
+    <section id="contributions" className="py-8 mt-6 md:mt-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-xl instrument-serif-regular-italic text-white">
           GitHub Contributions

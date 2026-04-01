@@ -5,7 +5,7 @@ import { stack1, stack2 } from '@/data/stack';
 
 export const Stack = () => {
   return (
-    <div className='mt-38 md:mt-38'>
+    <div id="stack" className='mt-6 mb-16 mx-2 md:my-12'>
       <h2 className='instrument-serif-regular-italic text-xl mb-4 text-neutral-900 dark:text-white/90'>
         Tools and Technologies
       </h2>
