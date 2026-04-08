@@ -51,8 +51,12 @@ export async function GET() {
       cache: 'no-store',
     });
 
-    console.log('Currently playing response status:', response.status);
-    if (response.status === 204 || response.status > 400) {
+    let song = null;
+    if (response.status === 200) {
+      song = await response.json();
+    }
+
+    if (response.status === 204 || response.status > 400 || !song || song.item === null) {
       console.log('Not playing or error, fetching recently played...');
       const recentResponse = await fetch(RECENTLY_PLAYED_ENDPOINT, {
         headers: {
@@ -84,13 +88,8 @@ export async function GET() {
       });
     }
 
-    const song = await response.json();
     console.log('Found currently playing:', song?.item?.name);
     
-    if (!song || song.item === null) {
-        return NextResponse.json({ isPlaying: false });
-    }
-
     const isPlaying = song.is_playing;
     const title = song.item.name;
     const artist = song.item.artists.map((_artist: any) => _artist.name).join(', ');

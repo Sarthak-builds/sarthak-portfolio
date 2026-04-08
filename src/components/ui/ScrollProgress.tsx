@@ -7,8 +7,12 @@ export const ScrollProgress = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1.5 bg-white origin-left z-[99999]"
-      style={{ scaleX: scrollYProgress }}
+      className="fixed top-0 left-0 w-full h-[2px] bg-neutral-200/80 z-[99999]"
+      style={{ 
+        scaleX: scrollYProgress,
+        transformOrigin: "0%",
+        originX: 0
+      }}
     />
   );
 };

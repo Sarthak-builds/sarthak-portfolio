@@ -39,7 +39,7 @@ const commands: CommandGroup[] = [
     { title: 'Download Resume', icon: FileText, href: '/resume.pdf', external: true, shortcut: 'R' },
   ]},
   { group: 'Settings', items: [
-    { title: 'Toggle Theme', icon: Sun, href: '#', shortcut: 'T' },
+    // { title: 'Toggle Theme', icon: Sun, href: '#', shortcut: 'T' },
   ]}
 ];
 

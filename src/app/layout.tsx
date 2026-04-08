@@ -44,13 +44,15 @@ export const metadata: Metadata = {
 import { Navbar } from "@/components/ui/Navbar";
 import OnekoCat from "@/components/ui/OnekoCat";
 
+import { ThemeProvider } from "@/components/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
@@ -58,23 +60,29 @@ export default function RootLayout({
         />
         <script defer src="https://cloud.umami.is/script.js" data-website-id="4acc163c-4d62-4460-823e-2a6c274ee402"></script>
       </head>
-      <body
-        className={`inter-tight antialiased`}
-      >
-        <Navbar />
-        <OnekoCat />
-        <div className="min-h-screen w-full relative bg-black">
-          <div
-            className="absolute inset-0 z-0 pointer-events-none"
-            style={{
-              background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.25), transparent 70%), #000000",
-            }}
-          />
-          <div className="relative z-10 pt-20">
-            <BlurFade>{children}</BlurFade>
+      <body className={`inter-tight antialiased bg-white dark:bg-black text-black dark:text-white transition-colors duration-300`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <Navbar />
+          <OnekoCat />
+          <div className="min-h-screen w-full relative">
+            <div
+              className="absolute inset-0 z-0 pointer-events-none opacity-100 hidden dark:block"
+              style={{
+                background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.25), transparent 70%), #000000",
+              }}
+            />
+            {/* Light mode gradient */}
+            <div
+              className="absolute inset-0 z-0 pointer-events-none opacity-100 block dark:hidden"
+              style={{
+                background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.15), transparent 70%), #ffffff",
+              }}
+            />
+            <div className="relative z-10 pt-20">
+              <BlurFade>{children}</BlurFade>
+            </div>
           </div>
-        </div>
-
+        </ThemeProvider>
       </body>
     </html>
   );

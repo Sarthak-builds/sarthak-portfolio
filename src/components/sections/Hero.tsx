@@ -1,8 +1,9 @@
 'use client';
 
 import Image from "next/image"
-import SpotifyBar from "../ui/SpotifyBar"
+import Cubes from "../ui/Cubes"
 import SocialLinks from "../ui/SocialLinks"
+import GuitarString from "../ui/GuitarString";
 
 export const Hero = () => {
   return (
@@ -68,9 +69,12 @@ export const Hero = () => {
 
       </div>
 
-      {/* Spotify Status Bar */}
-      <div className="relative mt-12 w-full max-w-[500px]">
-        <SpotifyBar />
+      {/* Quote */}
+      <div className="relative  w-full flex items-center justify-center">
+        {/* <p className="text-neutral-500/60 font-medium tracking-widest text-sm sm:text-base">
+          ॐ नमो भगवते वासुदेवाय
+        </p> */}
+        <GuitarString></GuitarString>
       </div>
     </div>
   )
