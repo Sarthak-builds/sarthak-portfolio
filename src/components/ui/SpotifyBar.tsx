@@ -41,7 +41,7 @@ const SpotifyBar = () => {
 
     if (!data || (!data.title && !data.message)) {
         return (
-             <div className="flex items-center gap-2 text-neutral-500 text-sm hanken-grotesk px-2 opacity-50">
+             <div className="flex items-center gap-2 text-neutral-500 text-sm px-2 opacity-50">
                 <FaSpotify className="w-4 h-4" />
                 <span>Not listening to anything right now</span>
             </div>
@@ -50,7 +50,7 @@ const SpotifyBar = () => {
     
     if (data.message === "No credentials") {
          return (
-             <div className="flex items-center gap-2 text-amber-500/60 text-xs hanken-grotesk px-2 italic">
+             <div className="flex items-center gap-2 text-amber-500/60 text-xs px-2 italic">
                 <FaSpotify className="w-4 h-4" />
                 <span>Spotify credentials needed for real-time tracking</span>
             </div>

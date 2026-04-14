@@ -22,3 +22,14 @@ export interface Project {
     image: string;
     status: "Live" | "Building" | "MVP";
 }
+
+export interface BlogPost {
+    slug: string;
+    title: string;
+    date: string;
+    description: string;
+    tags: string[];
+    coverImage?: string;
+    readingTime: string;
+    content?: string;
+}
