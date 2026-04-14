@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, Github, Briefcase, Code, FileText, Send, User, Laptop, Sparkles, Sun } from 'lucide-react';
+import { Search, X, Github, Briefcase, Code, FileText, Send, User, Laptop, Sparkles, Sun, PenLine } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 interface CommandMenuProps {
@@ -26,12 +26,14 @@ interface CommandGroup {
 const commands: CommandGroup[] = [
   { group: 'Quick Actions', items: [
     { title: 'View Projects', icon: Laptop, href: '#projects', shortcut: 'P' },
+    { title: 'Read Blogs', icon: PenLine, href: '/blogs', shortcut: 'B' },
     { title: 'Tech Stack / Skills', icon: Code, href: '#stack', shortcut: 'S' },
     { title: 'Open GitHub', icon: Github, href: 'https://github.com/Sarthak-builds', external: true, shortcut: 'G' },
   ]},
   { group: 'Navigate', items: [
     { title: 'Home', icon: User, href: '/', shortcut: 'H' },
     { title: 'Experience', icon: Briefcase, href: '#experience', shortcut: 'W' },
+    // { title: 'Writing', icon: PenLine, href: '/blogs' },
   ]},
   { group: 'Connect', items: [
     { title: 'X (Twitter)', icon: Sparkles, href: 'https://x.com/Sarthakbuilds', external: true, shortcut: 'X' },

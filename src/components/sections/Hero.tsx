@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image"
-import Cubes from "../ui/Cubes"
 import SocialLinks from "../ui/SocialLinks"
 import GuitarString from "../ui/GuitarString";
 
@@ -18,7 +17,7 @@ export const Hero = () => {
                 <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
-                <span className="text-[10px] text-neutral-500 font-medium ml-2 tracking-wide">  📍Indore, India</span>
+                <span className="text-[10px] text-[#909092] font-medium ml-2 tracking-wide font-[family-name:var(--font-inter)]">  📍Indore, India</span>
               </div>
               <div className="relative overflow-hidden rounded-lg min-h-[240px]">
                 <Image 
@@ -48,11 +47,11 @@ export const Hero = () => {
 
         {/* Right: Text & Bio */}
         <div className="w-full md:w-[65%] flex flex-col gap-6 text-left md:pt-4">
-          <h1 className="text-4xl md:text-5xl instrument-serif-regular text-white tracking-tight">
+          <h1 className="text-4xl md:text-6xl text-white tracking-tight font-medium font-[family-name:var(--font-instrument-serif)]">
             Sarthak Shiroty, 21
           </h1>
           
-          <div className="inter-tight text-neutral-300 text-[#a1a1aa] text-base md:text-base leading-relaxed flex flex-col gap-5">
+          <div className="text-[#a1a1aa] text-base leading-relaxed flex flex-col gap-5 font-[family-name:var(--font-inter-tight)]">
             <p>
               Product-focused Engineer who ships fast. I turn ideas into polished products and obsess over the details that make software feel right. Breaking the internet to learn how it works.
             </p>
@@ -69,13 +68,11 @@ export const Hero = () => {
 
       </div>
 
-      {/* Quote */}
-      <div className="relative  w-full flex items-center justify-center">
-        {/* <p className="text-neutral-500/60 font-medium tracking-widest text-sm sm:text-base">
-          ॐ नमो भगवते वासुदेवाय
-        </p> */}
-        <GuitarString></GuitarString>
+      {/* Guitar String Component */}
+      <div className="relative w-full mt-12">
+        <GuitarString />
       </div>
     </div>
+
   )
 }

@@ -6,13 +6,13 @@ import { stack1, stack2 } from '@/data/stack';
 export const Stack = () => {
   return (
     <div id="stack" className='mt-6 mb-16 mx-2 md:my-12'>
-      <h2 className='instrument-serif-regular-italic text-xl mb-4 text-neutral-900 dark:text-white/90'>
+      <h2 className='text-xl mb-4 text-neutral-900 dark:text-white/90'>
         Tools and Technologies
       </h2>
 
-      <div className='flex flex-col gap-4 w-full overflow-hidden md:overflow-hidden hanken-grotesk scale-90 md:scale-100'>
+      <div className='flex flex-col gap-4 w-full overflow-hidden md:overflow-hidden scale-90 md:scale-100'>
         <motion.div
-          className='flex flex-nowrap gap-2 md:gap-4 hanken-grotesk'
+          className='flex flex-nowrap gap-2 md:gap-4'
           animate={{ x: "-50%" }}
           transition={{ ease: "linear", duration: 20, repeat: Infinity }}
         >
@@ -23,7 +23,7 @@ export const Stack = () => {
                   className="w-5 h-6"
                   style={{ color: item.color }}
                 />
-                <span className='text-neutral-700 dark:text-gray-200 whitespace-nowrap'>
+                <span className='text-neutral-900 dark:text-white whitespace-nowrap'>
                   {item.name}
                 </span>
               </div>
@@ -43,7 +43,7 @@ export const Stack = () => {
                   className="w-6 h-6"
                   style={{ color: item.color }}
                 />
-                <span className='text-neutral-700 dark:text-gray-200 whitespace-nowrap'>
+                <span className='text-neutral-900 dark:text-white whitespace-nowrap'>
                   {item.name}
                 </span>
               </div>

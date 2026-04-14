@@ -1,4 +1,5 @@
 import Contributions from "@/components/sections/Contributions"
+import { Blogs } from "@/components/sections/Blogs"
 import { CTA } from "@/components/sections/CTA"
 import { Experience } from "@/components/sections/Experience"
 import { Hero } from "@/components/sections/Hero"
@@ -19,6 +20,7 @@ export default function Home() {
       <Stack></Stack>
       <Projects></Projects>
       <Contributions></Contributions>
+      {/* <Blogs /> */}
      
       
       <div className="flex justify-center w-full mt-10 mb-2">

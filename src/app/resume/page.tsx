@@ -4,12 +4,12 @@ import { HiDownload, HiArrowLeft } from 'react-icons/hi';
 
 export default function ResumePage() {
     return (
-        <div className="min-h-screen bg-black text-white p-4 md:p-8 flex flex-col items-center">
+        <div className="min-h-screen bg-[#f7f7f5] dark:bg-black text-neutral-900 dark:text-white p-4 md:p-8 flex flex-col items-center transition-colors duration-300">
             {/* Header / Actions */}
             <div className="w-full max-w-4xl flex justify-between items-center mb-8">
                 <Link 
                     href="/" 
-                    className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors"
+                    className="flex items-center gap-2 text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors"
                 >
                     <HiArrowLeft /> Back to Home
                 </Link>
@@ -24,7 +24,7 @@ export default function ResumePage() {
             </div>
 
             {/* Resume Viewer */}
-            <div className="w-full max-w-4xl bg-neutral-900 rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+            <div className="w-full max-w-4xl bg-white dark:bg-neutral-900 rounded-xl overflow-hidden border border-neutral-200 dark:border-white/10 shadow-2xl transition-colors duration-300">
                 <div className="relative w-full aspect-[1/1.414]">
                     <img 
                         src="/assets/images/Resume.webp" 
@@ -35,7 +35,7 @@ export default function ResumePage() {
             </div>
 
             {/* Footer space */}
-            <div className="mt-12 text-neutral-500 text-sm">
+            <div className="mt-12 text-neutral-500 dark:text-neutral-600 text-sm">
                 Sarthak Shiroty • Portfolio 2026
             </div>
         </div>

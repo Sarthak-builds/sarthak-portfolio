@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { BlurFade } from "@/components/ui/BlurFade";
+import { Inter, Instrument_Serif, Inter_Tight } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-inter-tight",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-instrument-serif",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -44,15 +61,13 @@ export const metadata: Metadata = {
 import { Navbar } from "@/components/ui/Navbar";
 import OnekoCat from "@/components/ui/OnekoCat";
 
-import { ThemeProvider } from "@/components/ThemeProvider";
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} ${instrumentSerif.variable} dark scroll-smooth`} suppressHydrationWarning>
       <head>
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
@@ -60,29 +75,20 @@ export default function RootLayout({
         />
         <script defer src="https://cloud.umami.is/script.js" data-website-id="4acc163c-4d62-4460-823e-2a6c274ee402"></script>
       </head>
-      <body className={`inter-tight antialiased bg-white dark:bg-black text-black dark:text-white transition-colors duration-300`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+      <body className="antialiased bg-black text-white">
           <Navbar />
           <OnekoCat />
           <div className="min-h-screen w-full relative">
             <div
-              className="absolute inset-0 z-0 pointer-events-none opacity-100 hidden dark:block"
+              className="absolute inset-0 z-0 pointer-events-none opacity-100"
               style={{
                 background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.25), transparent 70%), #000000",
-              }}
-            />
-            {/* Light mode gradient */}
-            <div
-              className="absolute inset-0 z-0 pointer-events-none opacity-100 block dark:hidden"
-              style={{
-                background: "radial-gradient(ellipse 80% 25% at 50% 0%, rgba(99, 161, 237, 0.15), transparent 70%), #ffffff",
               }}
             />
             <div className="relative z-10 pt-20">
               <BlurFade>{children}</BlurFade>
             </div>
           </div>
-        </ThemeProvider>
       </body>
     </html>
   );
