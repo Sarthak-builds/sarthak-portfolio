@@ -50,6 +50,7 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl text-white tracking-tight font-medium font-[family-name:var(--font-instrument-serif)]">
             Sarthak Shiroty, 21
           </h1>
+          {/* changes required */}
           
           <div className="text-[#a1a1aa] text-base leading-relaxed flex flex-col gap-5 font-[family-name:var(--font-inter-tight)]">
             <p>
