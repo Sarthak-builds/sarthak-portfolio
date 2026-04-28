@@ -45,7 +45,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Right: Text & Bio */}
+        {/* Right: Text & Bio , check notion docs*/}
         <div className="w-full md:w-[65%] flex flex-col gap-6 text-left md:pt-4">
           <h1 className="text-4xl md:text-6xl text-white tracking-tight font-medium font-[family-name:var(--font-instrument-serif)]">
             Sarthak Shiroty, 21
