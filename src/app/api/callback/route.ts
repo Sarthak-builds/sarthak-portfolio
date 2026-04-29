@@ -7,6 +7,7 @@ export async function GET(request: Request) {
   const client_id = process.env.SPOTIFY_CLIENT_ID;
   const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
   const redirect_uri = 'http://127.0.0.1:3000/api/callback';
+  // we have to fix the spotify thing to replace guitar string
 
   if (error) {
     return NextResponse.json({ error }, { status: 400 });
